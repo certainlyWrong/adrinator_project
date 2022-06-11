@@ -20,8 +20,13 @@ class HomePage extends StatelessWidget {
 }
 
 Widget _buildDesktop(BuildContext context) {
-  return const Center(
-    child: Text('Desktop'),
+  return Center(
+    child: Container(
+      color: Theme.of(context).colorScheme.background,
+      child: const Center(
+        child: Text('Desktop'),
+      ),
+    ),
   );
 }
 
