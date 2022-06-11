@@ -47,4 +47,8 @@ app.*.map.json
 /android/app/release
 
 linux
+web/
 build.sh
+firebase_options.dart
+.firebaserc
+.firebase/
