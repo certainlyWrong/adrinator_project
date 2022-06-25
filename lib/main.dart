@@ -1,13 +1,13 @@
-import 'pages/splash.dart';
-import 'firebase_options.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:adrinator/utils/themes.dart';
-import 'package:firebase_core/firebase_core.dart';
+import 'package:adrinator/pages/splash/splash.dart';
+import 'package:flutter/rendering.dart';
 
 void main() async {
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+  if (kDebugMode) {
+    debugRepaintRainbowEnabled = true;
+  }
 
   runApp(const Init());
 }

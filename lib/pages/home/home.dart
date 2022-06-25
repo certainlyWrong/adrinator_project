@@ -1,3 +1,4 @@
+import 'package:adrinator/pages/home/header.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -24,7 +25,7 @@ Widget _buildDesktop(BuildContext context) {
     child: Container(
       color: Theme.of(context).colorScheme.background,
       child: const Center(
-        child: Text('Desktop'),
+        child: Header(),
       ),
     ),
   );
