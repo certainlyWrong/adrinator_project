@@ -43,9 +43,9 @@ class _SplashPageState extends State<SplashPage> {
           children: [
             FittedBox(
               child: RepaintBoundary(
-                child: Image.network(
+                child: Image.asset(
                   width: 300,
-                  'https://camo.githubusercontent.com/a2617dec018bcadafb37382a5de8e8249a810c17a63a81e1244ac10958f79c1f/68747470733a2f2f666f72756d732d696d616765732e6f6e65706c75732e6e65742f646174612f776562696d672f323032312f30312d32392f363031343337346533613736322e676966',
+                  'assets/coelho.gif',
                 ),
               ),
             ),
